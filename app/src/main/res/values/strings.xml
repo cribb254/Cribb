@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Cribb</string>
+    <string name="action_settings">Search</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_listing_details">ListingDetails</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+
+    <string-array name="locations">
+        <item>Nairobi CBD</item>
+        <item>Westlands</item>
+        <item>Hurlingham</item>
+        <item>Upper Hill</item>
+        <item>Muthaiga</item>
+        <item>Karen</item>
+        <item>Kileleshwa</item>
+        <item>Karen</item>
+        <item>Umoja</item>
+        <item>South B</item>
+        <item>South C</item>
+        <item>Embakasi</item>
+        <item>Utawala</item>
+        <item>Nairobi West</item>
+        <item>Githurai</item>
+        <item>Eastleigh</item>
+    </string-array>
+
+    <string name="title_activity_maps">Map</string>
+
+</resources>

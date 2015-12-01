@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.com.cribb.fragments.Green"
+    android:background="#41a87a">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/image"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#eaeaea"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Cribb"
+        android:id="@+id/heading1"
+        android:layout_above="@+id/image"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Quick. Convenient. Reliable"
+        android:id="@+id/heading2"
+        android:layout_below="@+id/image"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="SKIP"
+        android:textColor="#fff"
+        android:id="@+id/btn_skip"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:padding="20dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_next"
+        android:contentDescription="@string/app_name"
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+
+</RelativeLayout>

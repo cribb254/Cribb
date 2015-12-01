@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:rsb="http://schemas.android.com/apk/res-auto"
+    tools:context="com.com.cribb.fragments.Search"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Property Type"
+        style="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Single Room"
+        android:checked="true"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bedsitter"
+        android:checked="true"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 bedroom"
+        android:checked="true"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1+ bedrooms"
+        android:checked="true"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Penthouse"
+        android:checked="true"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Office"
+        android:checked="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/textAppearanceMedium"
+        android:text="Price range (Ksh)"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_min"
+            android:text="0"
+            android:layout_alignParentLeft="true"
+            android:inputType="number"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_max"
+            android:text="500 000"
+            android:layout_alignParentRight="true"
+            android:inputType="number"/>
+    </RelativeLayout>
+
+    <org.florescu.android.rangeseekbar.RangeSeekBar
+        android:id="@+id/rangeSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        rsb:absoluteMaxValue="500000"
+        rsb:absoluteMinValue="0"
+        rsb:textAboveThumbsColor="@android:color/black"
+        rsb:valuesAboveThumbs="false"
+        rsb:barHeight="5dp"
+        rsb:activeColor="@color/colorAccent"
+        rsb:defaultColor="@color/colorPrimary"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/textAppearanceMedium"
+        android:text="Location"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/black" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/locations"
+        android:spinnerMode="dialog">
+
+    </Spinner>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="@drawable/button"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_submit"/>
+
+
+</LinearLayout>
