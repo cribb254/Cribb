@@ -22,8 +22,6 @@ public class HotDealsFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_hot_deals, container, false);
         assert view != null;
 
-        new Functions().initImageLoader(getActivity());
-
         RecyclerView rv = (RecyclerView) view.findViewById(R.id.recycler_view);
         rv.setLayoutManager(new LinearLayoutManager(getActivity()));
         rv.setAdapter(new HdealsAdapter(new Functions().randImg()));

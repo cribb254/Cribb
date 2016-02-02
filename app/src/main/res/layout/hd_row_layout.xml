@@ -10,7 +10,6 @@
     android:id="@+id/card_view"
     >
 
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -28,7 +27,6 @@
                 android:id="@+id/progressBar"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:visibility="gone"
                 />
 
             <LinearLayout
