@@ -41,7 +41,6 @@ public class ListingDetails extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO change msidn
                 Intent intent = new Intent(Intent.ACTION_DIAL);
                 intent.setData(Uri.parse(String.format("tel:%s", "0739222003")));
                 startActivity(intent);
