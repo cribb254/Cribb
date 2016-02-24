@@ -42,7 +42,7 @@ public class ListingDetails extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse(String.format("tel:%s", "0739222003")));
+                intent.setData(Uri.parse(String.format("tel:%s", "+254739222003")));
                 startActivity(intent);
             }
         });
