@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.com.cribb" >
+    package="ke.co.movein">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -11,11 +11,11 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
-            android:name=".activities.MainActivity"
+            android:name=".activity.MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,22 +23,65 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.ListingDetails"
+            android:name=".activity.PostDetails"
             android:label="@string/title_activity_listing_details"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"/>
+
         <activity
-            android:name=".activities.FullscreenActivity"
+            android:name=".activity.FullscreenActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_fullscreen"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.Gallery"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_fullscreen"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.SignUp"
+            android:label="@string/title_activity_sign_up"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.MyAccount"
+            android:label="@string/title_activity_my_account"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.CustomPhotoGallery" />
+        <activity
+            android:name=".activity.NewPost"
+            android:label="@string/title_activity_new_item"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.Login"
+            android:label="@string/title_activity_login"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
         </activity>
-        <activity android:name=".activities.SearchResults" >
+        <activity
+            android:name=".activity.MyStuffList"
+            android:label="@string/title_activity_my_stuff"
+            android:parentActivityName=".activity.MyAccount"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MyAccount" />
         </activity>
+        <activity
+            android:name=".activity.Search"
+            android:label="@string/title_activity_search"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".activity.SearchResults"/>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
+
+        <service
+            android:name=".service.Sync"
+            android:exported="false"/>
 
     </application>
 

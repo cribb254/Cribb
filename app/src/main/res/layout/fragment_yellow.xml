@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.com.cribb.fragments.Yellow"
+    tools:context="ke.co.movein.fragment.Yellow"
     android:background="#e7fbe978">
 
     <de.hdodenhof.circleimageview.CircleImageView

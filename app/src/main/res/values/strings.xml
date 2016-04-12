@@ -1,9 +1,53 @@
 <resources>
-    <string name="app_name">Cribb</string>
-    <string name="action_settings">Search</string>
-    <string name="section_format">Hello World from section: %1$d</string>
-    <string name="title_activity_listing_details">ListingDetails</string>
+    <string name="app_name">MoveIn</string>
+    <string name="action_search">Search</string>
+    <string name="action_account">Profile</string>
+    <string name="action_about">About</string>
+    <string name="title_activity_listing_details">Property Details</string>
     <string name="title_activity_fullscreen">FullscreenActivity</string>
+
+    <string name="no_net">Please enable the device to send and receive data over internet</string>
+    <string name="net_timeout">Connection timeout! Please use a reliable internet connection</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_my_account">My Account</string>
+    <string name="title_activity_sign_up">Sign up</string>
+    <string name="title_activity_new_item">New post</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_my_stuff">My posts</string>
+    <string name="title_activity_search">Search</string>
+
+    <string name="fname">Full names</string>
+    <string name="lname">Last Name</string>
+    <string name="instruction_ttl">Instructions</string>
+    <string name="instruction_subttl">Fill in all fields in the form</string>
+    <string name="ttl_personal">Personal details</string>
+
+    <string name="phone">Phone</string>
+    <string name="gender">Gender: </string>
+    <string name="phone_number">Phone number</string>
+    <string name="location">Location</string>
+    <string name="password">password</string>
+    <string name="old_password">old password</string>
+    <string name="confirm_password">confirm password</string>
+    <string name="username">username (tel. no)</string>
+    <string name="login">Login</string>
+    <string name="category">Property type:</string>
+    <string name="init_images">Current images</string>
+    <string name="images">New images</string>
+    <string name="required_field">Field cannot be null!</string>
+    <string name="property_details">Property details</string>
+    <string name="price">Price</string>
+    <string name="a_units">Available units</string>
+    <string name="edit">Edit</string>
+    <string name="view_my_posts">View my posts</string>
+    <string name="desc">Brief description of property</string>
+    <string name="change_pass">Change password</string>
+
+    <string-array name="gender">
+        <item>Select</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
 
     <string-array name="locations">
         <item>Nairobi CBD</item>
@@ -24,6 +68,35 @@
         <item>Eastleigh</item>
     </string-array>
 
-    <string name="title_activity_maps">Map</string>
+    <string name="create_tbl_post">
+       CREATE TABLE tbl_post (
+            id INTEGER UNIQUE,
+            price VARCHAR(45) NOT NULL,
+            location VARCHAR(45),
+            description VARCHAR(255),
+            a_units INTEGER NOT NULL,
+            lat DOUBLE,
+            lon DOUBLE,
+            last_update TIMESTAMP,
+            tbl_pty_type_id INTEGER NOT NULL,
+            tbl_user_id INTEGER NOT NULL)
+    </string>
+
+    <string name="create_tbl_image">
+        CREATE TABLE tbl_image (
+            id INTEGER UNIQUE,
+            path VARCHAR(255) NOT NULL,
+            status INTEGER NOT NULL,
+            last_update TIMESTAMP,
+            tbl_post_id INTEGER NOT NULL)
+    </string>
+
+     <string name="create_tbl_pty_type">
+        CREATE TABLE tbl_pty_type (
+            id INTEGER UNIQUE,
+            name VARCHAR(45) NOT NULL,
+            last_update TIMESTAMP)
+    </string>
+    <string name="pty_images">Property images</string>
 
 </resources>

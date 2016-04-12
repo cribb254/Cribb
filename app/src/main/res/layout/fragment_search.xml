@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:rsb="http://schemas.android.com/apk/res-auto"
-    tools:context="com.com.cribb.fragments.Search"
+    tools:context="ke.co.movein.fragment.Search"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:orientation="vertical">

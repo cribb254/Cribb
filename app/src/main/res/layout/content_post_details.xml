@@ -1,0 +1,134 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:id="@+id/content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cv_hzl_imgs">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CustomCard">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pty_images"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:gravity="start"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_num_imgs"
+                    android:gravity="end"
+                    android:layout_gravity="end|bottom"/>
+
+            </FrameLayout>
+
+            <include layout="@layout/underline" />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/horizontal_rv"
+                xmlns:tools="http://schemas.android.com/tools"
+                tools:listitem="@layout/list_item_horizontal_images"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentPadding="@dimen/activity_vertical_margin"
+            android:id="@+id/cv_pty_details"
+            android:layout_below="@+id/rl_pager">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:drawableLeft="@drawable/ic_content_more"
+                    android:drawableStart="@drawable/ic_content_more"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/tv_desc"
+                    android:visibility="gone"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:drawableLeft="@drawable/ic_hs_type"
+                    android:drawableStart="@drawable/ic_hs_type"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/tv_pty_type" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:drawableLeft="@drawable/ic_marker"
+                    android:drawableStart="@drawable/ic_marker"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/tv_loc" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:drawableLeft="@drawable/ic_cash"
+                    android:drawableStart="@drawable/ic_cash"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/tv_price" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:drawableLeft="@drawable/ic_contact"
+                    android:drawableStart="@drawable/ic_contact"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/tv_seller"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentPadding="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_below="@+id/cv_pty_details">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Map will appear here"/>
+
+        </android.support.v7.widget.CardView>
+
+ </LinearLayout>

@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.com.cribb.fragments.AroundMe">
+    tools:context="ke.co.movein.fragment.AroundMe">
 
     <com.google.android.gms.maps.MapView
         android:id="@+id/mapView"
